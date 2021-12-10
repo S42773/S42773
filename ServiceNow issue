@@ -1,0 +1,11 @@
+ServiceNow Import fail issue "Repository authentication failed, check credentials. Make sure the user has both read and write access"
+
+
+In fact GitHub must have changed something. Username/password is no longer accepted as a credential. The solution was to create an access token in GitHub 
+and use it as the password within ServiceNow.
+
+1. Go to github.com
+2. Navigate to "Settings"
+3. Navigate to "Developer"
+4. Create a new token
+5. Enter the created token as the password within the credentials used for GitHub in ServiceNow
